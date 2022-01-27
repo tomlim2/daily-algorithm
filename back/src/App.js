@@ -1,6 +1,4 @@
 import Greeting from "./components/Greeting";
-
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
