@@ -9,7 +9,7 @@ const D4 = ({ a, b }) => {
     }
   };
 
-  return twoSum(a, b);
+  return <div>{twoSum(a, b)}</div>;
 };
 
 export default D4;

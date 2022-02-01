@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import D4 from "./D4";
 
 describe("d4 alg", () => {
-  test("renders '[0,1]' as a array", () => {
+  test("renders '[0, 1]' as a array", () => {
     //setup
     const inputNembers = [2, 7, 11, 15];
     const target = 9;
@@ -14,12 +14,12 @@ describe("d4 alg", () => {
 
     //Assert
 
-    expect(expectedResult);
+    expect.arrayContaining(expectedResult);
   });
 
-  test("renders '120' as a number", () => {
+  test("renders '[1, 2]' as a array", () => {
     //setup
-    const inputNembers = [3,2,4];
+    const inputNembers = [3, 2, 4];
     const target = 6;
 
     render(<D4 a={inputNembers} b={target} />);
@@ -29,6 +29,6 @@ describe("d4 alg", () => {
 
     //Assert
 
-    expect(expectedResult);
+    expect.arrayContaining(expectedResult);
   });
 });

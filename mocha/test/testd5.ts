@@ -1,8 +1,8 @@
 import D5 from './D5'
 import assert from 'assert'
 
-describe("Calculate", () => {
-  describe(".D5", () => {
+describe("D5", () => {
+  describe("Palindrome", () => {
     it("121 reads as 121 from left to right and from right to left", () => {
       //Setup
       const inputNember = 121;
