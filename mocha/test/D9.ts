@@ -1,7 +1,7 @@
-const D8 = {
+const D9 = {
   mergeTwoSortedLists(list1: any[], list2: any[]): any[] {
     return list1.concat(list2).sort();
   },
 };
 
-export default D8;
+export default D9;
