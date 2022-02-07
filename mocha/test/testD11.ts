@@ -2,7 +2,7 @@ import D11 from "./D11";
 import assert from "assert";
 
 describe("D11", () => {
-  describe("26. Remove Duplicates from Sorted Array", () => {
+  describe("27. Remove Element", () => {
     it("Input [3, 2, 2, 3], and target number 3. Expect 2", () => {
       //Setup
       const inputList = [3, 2, 2, 3];
