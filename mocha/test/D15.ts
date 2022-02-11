@@ -1,12 +1,9 @@
-const D16 = {
-  plusOne(digits: number[]): number[] {
-    const digitsArray = digits.join("");
-    const arrToInt = BigInt(digitsArray);
-    const plusone = arrToInt + 1n;
-    const plusoneResult = Array.from(String(plusone), Number);
+const D15 = {
+  lengthOfLastWord(str: string): number {
+    const trimStr = str.trim();
 
-    return plusoneResult;
+    return trimStr.slice(trimStr.lastIndexOf(" ") + 1).length;
   },
 };
 
-export default D16;
+export default D15;

@@ -12,7 +12,31 @@ describe("D16", () => {
       const result = D16.plusOne(input);
 
       //Verify
-      assert.equal(result, expectedResult);
+      assert.deepEqual(result, expectedResult);
+    });
+
+    it("Input [4,3,2,1]. Expect [4,3,2,2]", () => {
+      //Setup
+      const input = [4, 3, 2, 1];
+      const expectedResult = [4, 3, 2, 2];
+
+      //Exercise
+      const result = D16.plusOne(input);
+
+      //Verify
+      assert.deepEqual(result, expectedResult);
+    });
+
+    it("Input [9]. Expect [1,0]", () => {
+      //Setup
+      const input = [9];
+      const expectedResult = [1, 0];
+
+      //Exercise
+      const result = D16.plusOne(input);
+
+      //Verify
+      assert.deepEqual(result, expectedResult);
     });
   });
 });
