@@ -6,6 +6,7 @@ const D17 = {
 
     let d = 0;
     let output = "";
+    
     for (let i = a.length - 1; i >= 0; i--) {
       let sum = +a[i] + +b[i] + d;
       d = ~~(sum / 2);
