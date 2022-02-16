@@ -1,30 +1,19 @@
-import D18 from "./D18";
+import D17 from "./D17";
 import assert from "assert";
 
-describe("D18", () => {
-  describe("69. Sqrt(x)", () => {
-    it("Input 4. Expect 2", () => {
+describe("D17", () => {
+  describe("66. Plus One", () => {
+    it("Input [1,2,3]. Expect [1,2,4]", () => {
       //Setup
-      const input = 4;
-      const expectedResult = 2;
+      const input1 = "11";
+      const input2 = "1";
+      const expectedResult = "100";
 
       //Exercise
-      const result = D18.sqrt(input);
+      const result = D17.addBinary(input1, input2);
 
       //Verify
-      assert.equal(result, expectedResult);
-    });
-
-    it("Input 8. Expect 2", () => {
-      //Setup
-      const input = 8;
-      const expectedResult = 2;
-
-      //Exercise
-      const result = D18.sqrt(input);
-
-      //Verify
-      assert.equal(result, expectedResult);
+      assert.deepEqual(result, expectedResult);
     });
   });
 });
