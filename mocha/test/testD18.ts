@@ -2,7 +2,7 @@ import D18 from "./D18";
 import assert from "assert";
 
 describe("D18", () => {
-  describe("70. Climbing Stairs", () => {
+  describe("69. Sqrt(x)", () => {
     it("Input 4. Expect 2", () => {
       //Setup
       const input = 4;
